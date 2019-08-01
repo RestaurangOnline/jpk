@@ -40,7 +40,7 @@ class Jpkfa
         $this->setGenerator();
     }
 
-    public function setGenerator(XMLGenerator $generator = null)
+    public function setGenerator($generator = null)
     {
         if (!$generator)
         {
