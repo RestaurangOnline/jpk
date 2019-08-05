@@ -151,7 +151,7 @@ class Jpkfa
         return $dane;
     }
 
-    protected function mapujPodmiot(Podmiot $podmiot)
+    protected function mapujPodmiot($podmiot)
     {
         $dane['KodKraju'] = 'PL'; // stala wartosc
 
