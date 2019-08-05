@@ -51,7 +51,7 @@ class Jpkfa
         $this->generator = $generator;
     }
 
-    public function dodajFakture(Faktura $faktura)
+    public function dodajFakture($faktura)
     {
         $this->dane['Faktury'][] = self::mapujFakture($faktura);
         $this->dane['FakturaCtrl']['LiczbaFaktur']++;
@@ -134,7 +134,7 @@ class Jpkfa
         return $dane;
     }
 
-    protected function mapujWiersz(FakturaWiersz $wiersz, $numer_faktury)
+    protected function mapujWiersz($wiersz, $numer_faktury)
     {
         $dane['Typ'] = 'G'; // stala wartosc
 
